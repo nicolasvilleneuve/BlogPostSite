@@ -23,7 +23,7 @@ def get_all_posts():
 
 @app.route("/post/<int:index>")
 def show_post(index):
-    return render_template("post.html", post=post_objects[index])
+    return render_template("post.html", post=post_objects[index-1])
 
 
 if __name__ == "__main__":
